@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Hello MUI</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="css/mui.min.css">
+		<style>
+			html,
+			body {
+				background-color: #efeff4;
+			}
+			
+			#pullrefresh .mui-table-view-cell{
+				position: relative;
+				padding: 0;
+				border: none;
+			}
+			#pullrefresh .mui-table-view-cell h2{
+				position: absolute;
+				left: 10px;
+				top: 5px;
+				color: #ffffff;
+				font-size: 16px;
+				text-shadow: 0 1px 0 #000;
+				opacity: 0.8;
+				font-weight: normal;
+				line-height: 16px;
+			}
+
+			#pullrefresh .mui-table-view-cell p{
+				position: absolute;
+				top: 30px;
+				left: 10px;
+				color: #ffffff;
+				font-size: 14px;
+				line-height: 14px;
+				text-shadow: 0 1px 0 #000;
+				opacity: 0.6;
+			}
+			#pullrefresh .mui-table-view-cell a{
+				margin: 2px 4px;
+				padding: 0;
+				border: none;
+			}
+			#pullrefresh .mui-table-view-cell a:nth-of-type(2) {
+				position: absolute;
+				display: inline-block;
+				bottom: 20px;
+				left: 10px;
+				color: #fff;
+				font-size: 14px;
+				text-shadow: 0 1px 0 #000;
+				opacity: 0.6;
+				height: 30px;
+				line-height: 30px;
+				overflow: visible;
+			}
+			#pullrefresh .mui-table-view-cell a:nth-of-type(2) img{
+				position: relative;
+				top: 11px;
+				margin-right: 5px;
+				display: inline-block;
+				height: 30px;
+				width: 30px;
+				-webkit-border-radius: 30px;
+				-moz-border-radius: 30px;
+				border-radius: 30px;
+			}
+			#pullrefresh .mui-table-view-cell img{
+				display: block;
+				width: 100%;
+				-webkit-border-radius: 5px;
+				-moz-border-radius: 5px;
+				border-radius: 5px;
+				border: none;
+			}
+
+			#pullrefresh  .mui-table-view-cell:after{
+				background: none;
+			}
+			.mui-slider{
+				margin-bottom: 2px;
+			}
+			.mui-slider-indicator .mui-indicator{
+				box-shadow: none;
+				opacity: 0.6;
+				margin: 1px 1px;
+			}
+			.mui-slider-indicator{
+				bottom: 4px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="pullrefresh" class="mui-content mui-scroll-wrapper">
+			<div class="mui-scroll">
+				<div class="mui-slider">
+					<div class="mui-slider-group mui-slider-loop">
+						<!--支持循环，需要重复图片节点-->
+						<div class="mui-slider-item mui-slider-item-duplicate">
+							<a href="#">
+								<img src="img/yuantiao.png" />
+							</a>
+						</div>
+						<div class="mui-slider-item">
+							<a href="#">
+								<img src="img/cbd.png" />
+							</a>
+						</div>
+						<div class="mui-slider-item">
+							<a href="#">
+								<img src="img/muwu.png" />
+							</a>
+						</div>
+						<div class="mui-slider-item">
+							<a href="#">
+								<img src="img/shuijiao.png" />
+							</a>
+						</div>
+						<div class="mui-slider-item">
+							<a href="#">
+								<img src="img/yuantiao.png" />
+							</a>
+						</div>
+						<!--支持循环，需要重复图片节点-->
+						<div class="mui-slider-item mui-slider-item-duplicate">
+							<a href="#">
+								<img src="img/cbd.png" />
+							</a>
+						</div>
+					</div>
+					<div class="mui-slider-indicator">
+						<div class="mui-indicator mui-active"></div>
+						<div class="mui-indicator"></div>
+						<div class="mui-indicator"></div>
+						<div class="mui-indicator"></div>
+					</div>
+				</div>
+				<ul class="mui-table-view mui-table-view-chevron">
+					<li class="mui-table-view-cell">
+						<a><img src="images/1.png"></a>
+						<h2>中国姑娘</h2>
+						<p>1套外景17张婚纱照</p>
+						<a href=""><img src="img/myphoto.png" alt=""/>摄影师小伍</a>
+					</li>
+					<li class="mui-table-view-cell"><a><img src="images/2.png"></a>
+						<h2>中国姑娘</h2>
+						<p>1套外景17张婚纱照</p>
+						<a href=""><img src="img/myphoto.png" alt=""/>摄影师小伍</a>
+					</li>
+					<li class="mui-table-view-cell"><a><img src="images/3.png"></a>
+						<h2>中国姑娘</h2>
+						<p>1套外景17张婚纱照</p>
+						<a href=""><img src="img/myphoto.png" alt=""/>摄影师小伍</a>
+					</li>
+					<li class="mui-table-view-cell"><a><img src="images/4.png"></a>
+						<h2>中国姑娘</h2>
+						<p>1套外景17张婚纱照</p>
+						<a href=""><img src="img/myphoto.png" alt=""/>摄影师小伍</a>
+					</li>
+					<li class="mui-table-view-cell"><a><img src="images/5.png"></a>
+						<h2>中国姑娘</h2>
+						<p>1套外景17张婚纱照</p>
+						<a href=""><img src="img/myphoto.png" alt=""/>摄影师小伍</a>
+					</li>
+					<li class="mui-table-view-cell"><a><img src="images/6.png"></a>
+						<h2>中国姑娘</h2>
+						<p>1套外景17张婚纱照</p>
+						<a href=""><img src="img/myphoto.png" alt=""/>摄影师小伍</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<script src="js/mui.min.js"></script>
+		<script>
+			var count = 0;
+			mui.init({
+				swipeBack: false,
+				pullRefresh: {
+					container: '#pullrefresh',
+					down: {
+						callback: pulldownRefresh
+					},
+					up: {
+						contentrefresh: '正在加载...',
+						callback: pullupRefresh
+					}
+				}
+			});
+			/**
+			 * 下拉刷新具体业务实现
+			 */
+			function pulldownRefresh() {
+				setTimeout(function() {
+					var table = document.body.querySelector('.mui-table-view');
+					var cells = document.body.querySelectorAll('.mui-table-view-cell');
+					for (var i = 1, len =6; i < len; i++) {
+						var li = document.createElement('li');
+						li.className = 'mui-table-view-cell';
+
+						li.innerHTML = '<a><img src="images/' +i+ '.png\" /></a>' +'<h2>中国姑娘</h2><p>1套外景17张婚纱照</p>'+
+						'<a href=""><img src="img/myphoto.png" alt=""/>摄影师小伍</a>';
+						//下拉刷新，新纪录插到最前面；
+						table.insertBefore(li, table.firstChild);
+					}
+					mui('#pullrefresh').pullRefresh().endPulldownToRefresh(count > 2); //refresh completed
+				}, 1000);
+			}
+
+			/**
+			 * 上拉加载具体业务实现
+			 */
+			function pullupRefresh() {
+				setTimeout(function() {
+					++count;
+					mui('#pullrefresh').pullRefresh().endPullupToRefresh((count > 2)); //参数为true代表没有更多数据了。
+					var table = document.body.querySelector('.mui-table-view');
+					var cells = document.body.querySelectorAll('.mui-table-view-cell');
+					for (var i =1, len =6; i < len; i++) {
+						var li = document.createElement('li');
+						li.className = 'mui-table-view-cell';
+						li.innerHTML = '<a><img src="images/' +i+ '.png\" /></a>' +'<h2>中国姑娘</h2><p>1套外景17张婚纱照</p>'+
+						'<a href=""><img src="img/myphoto.png" alt=""/>摄影师小伍</a>';
+						table.appendChild(li);
+					}
+				}, 1000);
+			}
+			var gallery = mui('.mui-slider');
+			gallery.slider({
+				bounceTime:500,
+				interval: 3000 //自动轮播周期，若为0则不自动播放，默认为0；
+			});
+		</script>
+	</body>
+
+</html>
